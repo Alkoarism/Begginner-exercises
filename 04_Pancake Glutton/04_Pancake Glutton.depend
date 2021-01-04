@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1605153512 source:f:\projetos\myprograms\beginner exercises c++\04_pancake glutton\glutton.cpp
+	"glutton.hpp"
+
+1605153512 f:\projetos\myprograms\beginner exercises c++\04_pancake glutton\glutton.hpp
+	<string>
+

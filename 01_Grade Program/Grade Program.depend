@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1604903880 source:f:\projetos\myprograms\beginner exercises c++\grade program\ux.cpp
+	<iostream>
+	<string>
+
+1604906737 source:f:\projetos\myprograms\beginner exercises c++\grade program\main.cpp
+	<iostream>
+	<stdexcept>
+	<string>
+	"UX.hpp"
+
+1604903880 f:\projetos\myprograms\beginner exercises c++\grade program\ux.hpp
+
