@@ -8,7 +8,7 @@ using std::endl; using std::string;
 bool simpleChoice (const string& desired1, const string& desired2){
     bool result = false;
     char choice = ' ';
-    while (choice != '1' && choice != '0'){
+    while (choice != '1' && choice != '2'){
         cin >> choice;
         switch (choice){
             case '1':
