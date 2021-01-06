@@ -17,6 +17,7 @@ void initializer (TTT& gData){
             string temp;
             ss >> temp;
             gData.slots[i][j] = " " + temp;
+            gData.slotsState[i][j] = false;
             ++slotCnt;
         }
     }
@@ -53,10 +54,10 @@ bool boardUpdate (TTT& toUpdate,const int& slot, const bool& turn){
         ++rowCnt;
     }
     
-    content = toUpdate.slots[rowCnt][colCnt];
-    update = (content != " X" || content != " O")? true: false;
-    if (update){
+    if (!toUpdate.slotsState[rowCnt][colCnt]){
         toUpdate.slots[rowCnt][colCnt] = player;
+        toUpdate.slotsState[rowCnt][colCnt] = true;
+        update = true;
     }
     return update;
 }

@@ -5,6 +5,7 @@
 
 struct TTT {
     std::string slots[3][3];
+    bool slotsState[3][3];
     std::string board[2] = {" |","\n---+---+---\n"};
 };
 

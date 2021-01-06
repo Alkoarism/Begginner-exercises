@@ -131,7 +131,8 @@ int main(){
                     if (winner == " Draw"){
                         cout << "It is a" << winner << "!" << endl;
                     } else {
-                        cout << "Game Over! The winner is:" << winner << endl;
+                        winner = (winner == " X")? "Player 1": "Player 2";
+                        cout << "Game Over! The winner is: " << winner << endl;
                     }
                     initializer(game);
                     gRestart = true;

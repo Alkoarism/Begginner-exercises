@@ -5,7 +5,7 @@
 	"Tic_Tac_Toe.hpp"
 	"IA_TTT.hpp"
 
-1606533741 e:\projetos\myprograms\beginner exercises c++\06_tic tac toe\tic_tac_toe.hpp
+1609895259 e:\projetos\myprograms\beginner exercises c++\06_tic tac toe\tic_tac_toe.hpp
 	<string>
 
 1606532278 e:\projetos\myprograms\beginner exercises c++\06_tic tac toe\ia_ttt.hpp
@@ -21,9 +21,14 @@
 1606279027 e:\projetos\myprograms\beginner exercises c++\06_tic tac toe\generic.hpp
 	<string>
 
-1606532278 source:e:\projetos\myprograms\beginner exercises c++\06_tic tac toe\tic_tac_toe.cpp
+1609896578 source:e:\projetos\myprograms\beginner exercises c++\06_tic tac toe\tic_tac_toe.cpp
 	<string>
 	<iostream>
 	<sstream>
 	"Tic_Tac_Toe.hpp"
+
+1609895947 source:e:\projetos\myprograms\beginner exercises c++\06_tic tac toe\generic.cpp
+	<iostream>
+	<string>
+	"generic.hpp"
 
