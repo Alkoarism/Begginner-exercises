@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1610598541 source:e:\projetos\myprograms\beginner exercises c++\07_dungeon crawler\main0-0.cpp
+	"Dungeon.hpp"
+	"generic.hpp"
+	<iostream>
+
+1611014008 e:\projetos\myprograms\beginner exercises c++\07_dungeon crawler\dungeon.hpp
+	<string>
+	<vector>
+
+1611014409 source:e:\projetos\myprograms\beginner exercises c++\07_dungeon crawler\dungeon.cpp
+	<iostream>
+	<vector>
+	<string>
+	"Dungeon.hpp"
+	"generic.hpp"
+
+1610598541 e:\projetos\myprograms\beginner exercises c++\07_dungeon crawler\generic.hpp
+	<string>
+
+1610598783 source:e:\projetos\myprograms\beginner exercises c++\07_dungeon crawler\generic.cpp
+	<iostream>
+	<string>
+	<chrono>
+	<random>
+	"generic.hpp"
+
+1611014409 source:e:\projetos\myprograms\beginner exercises c++\07_dungeon crawler\main0-1.cpp
+	"Dungeon.hpp"
+	<iostream>
+

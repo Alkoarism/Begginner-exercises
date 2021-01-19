@@ -1,0 +1,8 @@
+Program Progression throught versions:
+
+0.0 - Print test
+0.1 - Struct to Class conversion
+0.2 - Variable size board code test
+0.3 - Player movement
+0.4 - Adding traps to the game
+0.5 - Making the game playable
