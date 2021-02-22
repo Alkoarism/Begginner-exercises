@@ -5,16 +5,22 @@ using std::cin; using std::cout;
 using std::endl;
 
 int main(){
-    cout << "Sixth run- Making the game playable.";
+    cout << "Seventh run- Still making the game playable.\n";
 
-    double ver = 0.5;
+    double ver = 0.6;
+    int enemys = 0;
+
+    cout << "Welcome to my take on the"
+         << " dungeon crawler exercise game.\n"
+         << " ver.:" << ver
+         << endl;
 
     Dungeon board;
 
-    cout << "Welcome to my version of the"
-         << " dungeon crawler exercise game."
-         << " ver.:" << ver
-         << endl;
+    //enemy function testing
+    cin >> enemys;
+    board.initTraps(enemys);
+    board.print();
     
     char direction = ' ';
     cin >> direction;
@@ -33,5 +39,7 @@ int main(){
             board.movePlayer(1, 0);
             break;
     }
+
+    board.print();
     return 0;
 }

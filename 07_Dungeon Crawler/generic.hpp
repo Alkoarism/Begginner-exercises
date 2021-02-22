@@ -4,6 +4,7 @@
 #include <string>
 
 bool simpleChoice(const std::string&, const std::string&);
+int randomNumber();
 int randomNumber(const int&, const int&);
 int factorial(const int&);
 

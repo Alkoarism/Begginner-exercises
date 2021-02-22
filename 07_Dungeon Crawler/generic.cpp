@@ -32,11 +32,15 @@ bool simpleChoice (const string& desired1, const string& desired2){
     return result;
 }
 
+int randomNumber (){
+    srand(std::chrono::system_clock::now().time_since_epoch().count());
+    return rand();
+}
+
 int randomNumber (const int& start, const int& end){
     unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
     std::default_random_engine generator (seed);
     std::uniform_int_distribution<int> distribution(start,end);
-
     return distribution(generator);
 }
 

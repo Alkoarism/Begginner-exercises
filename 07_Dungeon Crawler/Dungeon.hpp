@@ -5,12 +5,17 @@
 #include <vector>
 
 struct Entity{
-    int axisX = 1, axisY = 1, life = 1;
+    int xAxis = 1, yAxis = 1, life = 1;
     char name = ' ';
 };
 
 class Dungeon {
 public:
+    Dungeon()
+        { initBoard(); }
+    Dungeon(const int totalRows, const int totalCols)
+        { initBoard(totalRows, totalCols); }
+    
     void initBoard(const int x = 10, const int y = 10);
     void initTraps(int&);
     void initEnemys(int&);          //++++++++++++++++

@@ -11,21 +11,21 @@ using std::cerr;
 typedef vector<string>::size_type size;
 
 //future corrections:
-//      insert a size check routine on initBoard.
-//      insert a input check on movePlayer.
-//      test try and catch keywords use on later development steps
-//      do not forget to make a more complete movePlayer function later
-//      randomNumber function used on initTraps does not have a good random
+//    insert a size check routine on initBoard.
+//    insert a input check on movePlayer.
+//    test try and catch keywords use on later development steps
+//    do not forget to make a more complete movePlayer function later
+//    transform the entire program into a full OOP thing... maybe??
 
 void Dungeon::initBoard (const int x, const int y){
     size rowCnt = x, colCnt = y;
-    vector<char> axisX;
+    vector<char> xAxis;
     for (size j = 0; j != colCnt; ++j){
-        axisX.push_back('.');
+        xAxis.push_back('.');
     }
 
     for (size i = 0; i != rowCnt; ++i){
-        coords.push_back(axisX);
+        coords.push_back(xAxis);
     }
     player.name = 'P';
     entitys.push_back(player);
@@ -36,8 +36,12 @@ void Dungeon::initBoard (const int x, const int y){
 void Dungeon::initTraps(int& amount){
     int i = 0;
     while (i != amount){
-        size row = randomNumber (0, coords.size() - 1),
-            col = randomNumber (0, coords[0].size() - 1);
+        size row = 0,
+            col = randomNumber (0, (coords.size())*(coords[0].size()));
+        while (col > coords[0].size()){
+            col -= coords[0].size();
+            row++;
+        }
         
         if (coords[row][col] == '.'){
             coords[row][col] = 'T';
@@ -72,17 +76,17 @@ void Dungeon::moveEnemy(){
 }
 
 void Dungeon::movePlayer(int rowDir, int colDir){
-    int yPos = player.axisY + rowDir;
-    int xPos = player.axisX + colDir;
-    coords[player.axisY][player.axisX] = '.';
+    int yPos = player.yAxis + rowDir;
+    int xPos = player.xAxis + colDir;
+    coords[player.yAxis][player.xAxis] = '.';
 
     if (!(yPos < 0 || yPos >= coords.size())){
-        player.axisY = yPos;
+        player.yAxis = yPos;
     }
     if (!(xPos < 0 || xPos >= coords[0].size())) {
-        player.axisX = xPos;
+        player.xAxis = xPos;
     }
 
     entitys[0] = player;
-    coords[player.axisY][player.axisX] = player.name;
+    coords[player.yAxis][player.xAxis] = player.name;
 }
