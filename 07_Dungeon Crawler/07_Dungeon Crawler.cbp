@@ -37,7 +37,7 @@
 		<Unit filename="description.txt" />
 		<Unit filename="generic.cpp" />
 		<Unit filename="generic.hpp" />
-		<Unit filename="main0-1.cpp" />
+		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

@@ -21,12 +21,10 @@ public:
     void initEnemys(int&);          //++++++++++++++++
     void print();
     void moveEnemy();               //++++++++++++++++
-    void movePlayer(int, int);
-    int getVictory(){ return victory; }
+    int movePlayer(int, int);
     Entity getPlayer() { return player; }
 
 private:
-    int victory = 0;
     std::vector<std::vector<char>> coords;
     std::vector<Entity> entitys;
     Entity player;

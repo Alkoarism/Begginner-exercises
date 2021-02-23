@@ -11,10 +11,9 @@ using std::cerr;
 typedef vector<string>::size_type size;
 
 //future corrections:
-//    insert a size check routine on initBoard.
+//    insert a size check routine on initBoard. ???
 //    insert a input check on movePlayer.
 //    test try and catch keywords use on later development steps
-//    do not forget to make a more complete movePlayer function later
 //    transform the entire program into a full OOP thing... maybe??
 
 void Dungeon::initBoard (const int x, const int y){
@@ -75,7 +74,7 @@ void Dungeon::moveEnemy(){
 
 }
 
-void Dungeon::movePlayer(int rowDir, int colDir){
+int Dungeon::movePlayer(int rowDir, int colDir){
     int yPos = player.yAxis + rowDir;
     int xPos = player.xAxis + colDir;
     coords[player.yAxis][player.xAxis] = '.';
@@ -88,5 +87,16 @@ void Dungeon::movePlayer(int rowDir, int colDir){
     }
 
     entitys[0] = player;
-    coords[player.yAxis][player.xAxis] = player.name;
+    switch (coords[player.yAxis][player.xAxis]){
+        case '.':
+            coords[player.yAxis][player.xAxis] = player.name;
+            return 0;
+        break;
+        case 'X':
+            return 1;
+        break;
+        default:
+            return -1;
+        break;
+    }
 }
