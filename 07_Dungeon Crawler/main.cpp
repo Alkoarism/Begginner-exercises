@@ -29,20 +29,20 @@ int main(){
         cin >> direction;
 
         switch (direction){
-            case 'w':
-                y = 1;
-                break;
-            case 'a':
-                y = -1;
-                break;
-            case 's':
-                x = -1;
-                break;
             case 'd':
                 x = 1;
                 break;
+            case 'a':
+                x = -1;
+                break;
+            case 's':
+                y = 1;
+                break;
+            case 'w':
+                y = -1;
+                break;
         }
-        int victory = board.movePlayer(x,y);
+        int victory = board.movePlayer(y, x);
 
         if (victory != 0){
             switch (victory){
