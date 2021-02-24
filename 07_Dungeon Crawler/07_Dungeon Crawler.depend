@@ -29,3 +29,28 @@
 	"Dungeon.hpp"
 	<iostream>
 
+1614059646 source:e:\projetos\myprograms\c++ stuff\beginner exercises c++\07_dungeon crawler\generic.cpp
+	<iostream>
+	<string>
+	<chrono>
+	<random>
+	"generic.hpp"
+
+1614059646 e:\projetos\myprograms\c++ stuff\beginner exercises c++\07_dungeon crawler\generic.hpp
+	<string>
+
+1614148288 source:e:\projetos\myprograms\c++ stuff\beginner exercises c++\07_dungeon crawler\main.cpp
+	"Dungeon.hpp"
+	<iostream>
+
+1614146212 e:\projetos\myprograms\c++ stuff\beginner exercises c++\07_dungeon crawler\dungeon.hpp
+	<string>
+	<vector>
+
+1614148271 source:e:\projetos\myprograms\c++ stuff\beginner exercises c++\07_dungeon crawler\dungeon.cpp
+	<iostream>
+	<vector>
+	<string>
+	"Dungeon.hpp"
+	"generic.hpp"
+

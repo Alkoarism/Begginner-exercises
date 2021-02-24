@@ -5,21 +5,20 @@ using std::cin; using std::cout;
 using std::endl;
 
 int main(){
-    cout << "Seventh run- Still making the game playable.\n";
+    cout << "Eigth run- Now adding moving enemys!.\n";
 
-    double ver = 0.6;
+    double ver = 0.7;
     int enemys = 0;
 
     cout << "Welcome to my take on the"
          << " dungeon crawler exercise game.\n"
-         << " ver.:" << ver
+         << "ver.:" << ver
          << endl;
 
     Dungeon board;
 
     //enemy function testing
-    cin >> enemys;
-    board.initTraps(enemys);
+    board.initEnemys(5, 'E');
     board.print();
     
     //temporary game loop test

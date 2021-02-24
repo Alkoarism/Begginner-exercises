@@ -13,15 +13,18 @@ class Dungeon {
 public:
     Dungeon()
         { initBoard(); }
-    Dungeon(const int totalRows, const int totalCols)
-        { initBoard(totalRows, totalCols); }
+    Dungeon(const int totalRows, const int totalCols, const int totalTraps)
+        { initBoard(totalRows, totalCols, totalTraps); }
     
-    void initBoard(const int x = 10, const int y = 10);
-    void initTraps(int&);
-    void initEnemys(int&);          //++++++++++++++++
+    void initBoard(const int x = 10, const int y = 10, const int traps = 10);
+    void initTraps(const int);
+    void initEnemys(const int, const char);          //++++++++++++++++
+    void randomPositioning(const char);
     void print();
-    void moveEnemy();               //++++++++++++++++
+    int moveEnemy();               //++++++++++++++++
     int movePlayer(int, int);
+    void moveLimitCheck(const int&,const int&, Entity&);
+
     Entity getPlayer() { return player; }
 
 private:

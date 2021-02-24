@@ -7,3 +7,4 @@ Program Progression throught versions:
 0.4 - Adding traps to the game
 0.5 - Making the game playable
 0.6 - Still making the game playable
+0.7 - Now Adding moving enemys!
