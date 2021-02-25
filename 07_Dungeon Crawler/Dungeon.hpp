@@ -18,9 +18,9 @@ public:
     
     void initBoard(const int x = 10, const int y = 10, const int traps = 10);
     void initEnemys(const int, const char);
-    void randomPositioning(Entity);
+    void randomPositioning(Entity&);
     void print();
-    int moveEnemys(const char, const int, const int);
+    int moveEnemys(const char);
     int movePlayer(const int,const int);
     void moveLimitCheck(const int&,const int&, Entity&);
 

@@ -16,15 +16,6 @@ typedef vector<string>::size_type size;
 //    test try and catch keywords use on later development steps
 //      Add a namecheck try and throw algorithm on initEnemy
 //    transform the entire program into a full OOP thing... maybe??
-//    Uuuhhh... for today I recomend to analyse the whole moveEnemy function
-//    Really, today was strange, this entityEquals is really necessary?
-
-void entityEquals(Entity a, Entity b){
-    b.name = a.name;
-    b.xAxis = a.xAxis;
-    b.yAxis = a.yAxis;
-    b.life = a.life;
-}
 
 void Dungeon::initBoard (const int x, const int y, const int traps){
     size rowCnt = x, colCnt = y;
@@ -54,7 +45,7 @@ void Dungeon::initEnemys(const int amountOfEnemys, const char name){
     }
 }
 
-void Dungeon::randomPositioning(Entity entity){
+void Dungeon::randomPositioning(Entity& entity){
     bool positioned = false;
     while (!positioned){
         size row = 0,
@@ -91,42 +82,63 @@ void Dungeon::print () {
     cout << "\n" << endl;
 }
 
-int Dungeon::moveEnemys
-    (const char id, const int yMaxMove, const int xMaxMove){
-    
-    Entity enemy;
-    for (int i = 0; i != entitys.size(); i++){
-        if (entitys[i].name == id){
-            entityEquals(entitys[i], enemy);
-            coords[enemy.yAxis][enemy.xAxis] = '.';
+int Dungeon::moveEnemys (const char id){
+    for (int i = 0; i < entitys.size(); i++){
+        Entity temp = entitys[i];
+
+        coords[temp.yAxis][temp.xAxis] = '.';
+        if (temp.name == id){
 
             bool moved = false;
+            int overload = 0;
             while (!moved){
-                size row = 0,
-                    col = randomNumber (0, 4 * (yMaxMove * xMaxMove));
-                while (col > xMaxMove){
-                    col -= xMaxMove;
-                    row++;
+                int row = 0, col = 0, direction = randomNumber(0, 4);
+                if (overload == 100){
+                    direction = 4;
+                }
+                
+                switch (direction){
+                    case 0:
+                        row = -1;
+                        col = 0;
+                    break;
+                    case 1:
+                        row = 0;
+                        col = -1;
+                    break;
+                    case 2:
+                        row = 1;
+                        col = 0;
+                    break;
+                    case 3:
+                        row = 0;
+                        col = 1;
+                    break;
+                    case 4:
+                        row = 0;
+                        col = 0;
                 }
 
-                col += (enemy.xAxis - xMaxMove);
-                row += (enemy.yAxis - yMaxMove);
-
-                moveLimitCheck(row, col, enemy);
-                switch (coords[enemy.yAxis][enemy.xAxis]){    
+                Entity temp2 = temp;
+                moveLimitCheck
+                    (temp2.yAxis + row, temp2.xAxis + col, temp2);
+                
+                switch (coords[temp2.yAxis][temp2.xAxis]){
+                    case '.':
+                        entitys[i] = temp2;
+                        moved = true;
+                    break;
                     case 'P':
                         return -1;
                     break;
-                    case '.':
-                        coords[enemy.yAxis][enemy.xAxis] = enemy.name;
-                        entitys[i] = enemy;
-                        moved = true;
-                    break;
+                    default:
+                        overload++;                    
                 }
             }
         }
-    }
 
+        coords[entitys[i].yAxis][entitys[i].xAxis] = entitys[i].name;
+    }
     return 0;
 }
 

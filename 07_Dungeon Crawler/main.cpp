@@ -42,9 +42,9 @@ int main(){
                 break;
         }
         int victory = board.movePlayer(y, x);
-
-        //if(victory == 0)    
-        //    victory = board.moveEnemys('E', 1, 1);
+        
+        int lose = board.moveEnemys('E');
+        cout << lose;
 
         if (victory != 0){
             switch (victory){
