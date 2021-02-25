@@ -17,12 +17,11 @@ public:
         { initBoard(totalRows, totalCols, totalTraps); }
     
     void initBoard(const int x = 10, const int y = 10, const int traps = 10);
-    void initTraps(const int);
-    void initEnemys(const int, const char);          //++++++++++++++++
-    void randomPositioning(const char);
+    void initEnemys(const int, const char);
+    void randomPositioning(Entity);
     void print();
-    int moveEnemy();               //++++++++++++++++
-    int movePlayer(int, int);
+    int moveEnemys(const char, const int, const int);
+    int movePlayer(const int,const int);
     void moveLimitCheck(const int&,const int&, Entity&);
 
     Entity getPlayer() { return player; }

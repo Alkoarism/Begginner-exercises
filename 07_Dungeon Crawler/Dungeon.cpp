@@ -16,6 +16,15 @@ typedef vector<string>::size_type size;
 //    test try and catch keywords use on later development steps
 //      Add a namecheck try and throw algorithm on initEnemy
 //    transform the entire program into a full OOP thing... maybe??
+//    Uuuhhh... for today I recomend to analyse the whole moveEnemy function
+//    Really, today was strange, this entityEquals is really necessary?
+
+void entityEquals(Entity a, Entity b){
+    b.name = a.name;
+    b.xAxis = a.xAxis;
+    b.yAxis = a.yAxis;
+    b.life = a.life;
+}
 
 void Dungeon::initBoard (const int x, const int y, const int traps){
     size rowCnt = x, colCnt = y;
@@ -32,39 +41,20 @@ void Dungeon::initBoard (const int x, const int y, const int traps){
     coords[1][1] = player.name;
     coords[rowCnt - 1][colCnt - 1] = 'X';
 
-    initTraps(traps);
-}
-
-void Dungeon::initTraps(const int amountOfTraps){
-    for (int i = 0; i < amountOfTraps; i++){
-        randomPositioning('T');
-    }
+    //initializes traps (fixed entitys)
+    initEnemys(traps, 'T');
 }
 
 void Dungeon::initEnemys(const int amountOfEnemys, const char name){
     for (int i = 0; i < amountOfEnemys; i++){
         Entity enemy;
         enemy.name = name;
-        randomPositioning(enemy.name);
-
-        bool found = false;
-        for (size j = 0; j < coords.size() && !found; j++){
-            for (size k = 0; k < coords[0].size() && !found; k++){
-                if (coords[j][k] == enemy.name 
-                    && enemy.yAxis != j && enemy.xAxis != k){
-                    
-                    enemy.yAxis = j;
-                    enemy.xAxis = k;
-                    found = true;
-                }
-            }
-        }
-
+        randomPositioning(enemy);
         entitys.push_back(enemy);
     }
 }
 
-void Dungeon::randomPositioning(const char name){
+void Dungeon::randomPositioning(Entity entity){
     bool positioned = false;
     while (!positioned){
         size row = 0,
@@ -76,7 +66,9 @@ void Dungeon::randomPositioning(const char name){
         }
         
         if (coords[row][col] == '.'){
-            coords[row][col] = name;
+            coords[row][col] = entity.name;
+            entity.yAxis = row;
+            entity.xAxis = col;
             positioned = true;
         }
     }
@@ -99,11 +91,46 @@ void Dungeon::print () {
     cout << "\n" << endl;
 }
 
-int Dungeon::moveEnemy(){
+int Dungeon::moveEnemys
+    (const char id, const int yMaxMove, const int xMaxMove){
+    
+    Entity enemy;
+    for (int i = 0; i != entitys.size(); i++){
+        if (entitys[i].name == id){
+            entityEquals(entitys[i], enemy);
+            coords[enemy.yAxis][enemy.xAxis] = '.';
 
+            bool moved = false;
+            while (!moved){
+                size row = 0,
+                    col = randomNumber (0, 4 * (yMaxMove * xMaxMove));
+                while (col > xMaxMove){
+                    col -= xMaxMove;
+                    row++;
+                }
+
+                col += (enemy.xAxis - xMaxMove);
+                row += (enemy.yAxis - yMaxMove);
+
+                moveLimitCheck(row, col, enemy);
+                switch (coords[enemy.yAxis][enemy.xAxis]){    
+                    case 'P':
+                        return -1;
+                    break;
+                    case '.':
+                        coords[enemy.yAxis][enemy.xAxis] = enemy.name;
+                        entitys[i] = enemy;
+                        moved = true;
+                    break;
+                }
+            }
+        }
+    }
+
+    return 0;
 }
 
-int Dungeon::movePlayer(int rowDir, int colDir){
+int Dungeon::movePlayer(const int rowDir, const int colDir){
     int yPos = player.yAxis + rowDir;
     int xPos = player.xAxis + colDir;
     coords[player.yAxis][player.xAxis] = '.';

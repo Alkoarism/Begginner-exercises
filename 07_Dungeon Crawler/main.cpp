@@ -43,6 +43,9 @@ int main(){
         }
         int victory = board.movePlayer(y, x);
 
+        //if(victory == 0)    
+        //    victory = board.moveEnemys('E', 1, 1);
+
         if (victory != 0){
             switch (victory){
                 case 1:
