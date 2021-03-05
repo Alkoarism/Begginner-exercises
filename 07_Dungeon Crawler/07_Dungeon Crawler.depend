@@ -29,28 +29,35 @@
 	"Dungeon.hpp"
 	<iostream>
 
-1614059646 source:e:\projetos\myprograms\c++ stuff\beginner exercises c++\07_dungeon crawler\generic.cpp
+1614824474 source:e:\projetos\myprograms\c++ stuff\beginner exercises c++\07_dungeon crawler\generic.cpp
 	<iostream>
+	<fstream>
 	<string>
 	<chrono>
 	<random>
 	"generic.hpp"
 
-1614059646 e:\projetos\myprograms\c++ stuff\beginner exercises c++\07_dungeon crawler\generic.hpp
-	<string>
+1614824471 e:\projetos\myprograms\c++ stuff\beginner exercises c++\07_dungeon crawler\generic.hpp
 
-1614283296 source:e:\projetos\myprograms\c++ stuff\beginner exercises c++\07_dungeon crawler\main.cpp
-	"Dungeon.hpp"
+1614903083 source:e:\projetos\myprograms\c++ stuff\beginner exercises c++\07_dungeon crawler\main.cpp
 	<iostream>
+	<string>
+	<limits>
+	"generic.hpp"
+	"Dungeon.hpp"
 
-1614281663 e:\projetos\myprograms\c++ stuff\beginner exercises c++\07_dungeon crawler\dungeon.hpp
+1614900046 e:\projetos\myprograms\c++ stuff\beginner exercises c++\07_dungeon crawler\dungeon.hpp
 	<string>
 	<vector>
+	"Entity.hpp"
 
-1614288867 source:e:\projetos\myprograms\c++ stuff\beginner exercises c++\07_dungeon crawler\dungeon.cpp
+1614841043 source:e:\projetos\myprograms\c++ stuff\beginner exercises c++\07_dungeon crawler\dungeon.cpp
 	<iostream>
 	<vector>
 	<string>
 	"Dungeon.hpp"
 	"generic.hpp"
+	"Entity.hpp"
+
+1614373545 e:\projetos\myprograms\c++ stuff\beginner exercises c++\07_dungeon crawler\entity.hpp
 

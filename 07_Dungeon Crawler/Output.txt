@@ -1,0 +1,33 @@
+Presentation
+
+Final beta- Preparing the UI.
+ver.: 0.8
+Welcome to my take on the Dungeon Crawler game!
+EndPresentation
+
+MainMenu
+
+Choose one of the following options:
+1 - Start game
+2 - Read Instructions
+3 - Settings (Coming Soon, maybe?)
+4 - quit.
+EndMainMenu
+
+Instructions
+
+You are in a dungeon and need to get to the treasure marked as "X".
+The "." are tiles where you can safely step
+On the map, you are marked as P" and can move vertically or
+horizontally by using the keys as follows:
+w = up
+s = down
+a = left
+d = right
+Only the first input character will be read.
+Any other entity on the board is considered as an enemy and
+if you move towards one of them, or the opposite, you lose the game.
+
+To stop the game on its current stage input 0
+and you will be redirected to the menu.
+EndInstructions

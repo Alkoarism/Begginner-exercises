@@ -3,6 +3,7 @@
 #include <string>
 #include "Dungeon.hpp"
 #include "generic.hpp"
+#include "Entity.hpp"
 
 using std::cout; using std::endl;
 using std::vector; using std::string;
@@ -18,8 +19,9 @@ typedef vector<string>::size_type size;
 //    transform the entire program into a full OOP thing... maybe??
 
 void Dungeon::initBoard (const int x, const int y, const int traps){
-    size rowCnt = x, colCnt = y;
+    size rowCnt = y, colCnt = x;
     vector<char> xAxis;
+    coords.clear();
     for (size j = 0; j != colCnt; ++j){
         xAxis.push_back('.');
     }
@@ -33,6 +35,7 @@ void Dungeon::initBoard (const int x, const int y, const int traps){
     coords[rowCnt - 1][colCnt - 1] = 'X';
 
     //initializes traps (fixed entitys)
+    entitys.clear();
     initEnemys(traps, 'T');
 }
 
@@ -42,26 +45,6 @@ void Dungeon::initEnemys(const int amountOfEnemys, const char name){
         enemy.name = name;
         randomPositioning(enemy);
         entitys.push_back(enemy);
-    }
-}
-
-void Dungeon::randomPositioning(Entity& entity){
-    bool positioned = false;
-    while (!positioned){
-        size row = 0,
-            col = randomNumber (0, (coords.size())*(coords[0].size()));
-
-        while (col > coords[0].size()){
-            col -= coords[0].size();
-            row++;
-        }
-        
-        if (coords[row][col] == '.'){
-            coords[row][col] = entity.name;
-            entity.yAxis = row;
-            entity.xAxis = col;
-            positioned = true;
-        }
     }
 }
 
@@ -114,9 +97,10 @@ int Dungeon::moveEnemys (const char id){
                         row = 0;
                         col = 1;
                     break;
-                    case 4:
+                    default:
                         row = 0;
                         col = 0;
+                    break;
                 }
 
                 Entity temp2 = temp;
@@ -161,6 +145,26 @@ int Dungeon::movePlayer(const int rowDir, const int colDir){
         default:
             return -1;
         break;
+    }
+}
+
+void Dungeon::randomPositioning(Entity& entity){
+    bool positioned = false;
+    while (!positioned){
+        size row = 0,
+            col = randomNumber (0, (coords.size())*(coords[0].size()));
+
+        while (col > coords[0].size()){
+            col -= coords[0].size();
+            row++;
+        }
+        
+        if (coords[row][col] == '.'){
+            coords[row][col] = entity.name;
+            entity.yAxis = row;
+            entity.xAxis = col;
+            positioned = true;
+        }
     }
 }
 

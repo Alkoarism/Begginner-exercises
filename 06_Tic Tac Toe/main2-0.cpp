@@ -63,6 +63,8 @@ int main(){
                 while (!safe){
                     cin >> choice;
                     switch (choice){
+                        // this is not common code, it is intended to execute the same logic
+                        // whith any case from 1 to 9.
                         case 1: case 2: case 3:
                         case 4: case 5: case 6:
                         case 7: case 8: case 9:

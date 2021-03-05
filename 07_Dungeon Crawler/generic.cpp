@@ -1,11 +1,13 @@
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <chrono>
 #include <random>
 #include "generic.hpp"
 
 using std::cin; using std::cerr;
-using std::endl; using std::string;
+using std::cout; using std::endl;
+using std::string; using std::ifstream;
 
 bool simpleChoice (const string& desired1, const string& desired2){
     bool result = false;
@@ -53,4 +55,27 @@ int factorial (const int& number){
     std::cout << copy << endl;
 
     return copy;
+}
+
+void fileRead(string fileName, string start, string end){
+    string myText;
+    ifstream file(fileName);
+    bool print = false;
+    while (getline (file, myText)) {
+        if(myText == end){
+            file.close();
+            print = false;
+        }
+
+        if(print)
+            cout << myText << "\n";
+
+        if(myText == start)
+            print = true;
+    }
+}
+
+void clearOutput()
+{
+    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 }

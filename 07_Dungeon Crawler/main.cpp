@@ -1,63 +1,158 @@
-#include "Dungeon.hpp"
 #include <iostream>
+#include <string>
+#include <limits>
 
-using std::cin; using std::cout;
+#include "generic.hpp"
+#include "Dungeon.hpp"
+
+using std::cerr;
+using std::cin;
+using std::cout;
 using std::endl;
+using std::string;
 
-int main(){
-    cout << "Eigth run- Now adding moving enemys!.\n";
+int startMenu(Dungeon&);
+int gameRun(Dungeon&);
+// ---------------- Function to be created
+void configMenu()
+{ cout << "\nDon not blame me, you can play the game right?\n"; }
 
-    double ver = 0.7;
-    int enemys = 0;
+int main()
+{
+    fileRead("Output.txt", "Presentation", "EndPresentation");
 
-    cout << "Welcome to my take on the"
-         << " dungeon crawler exercise game.\n"
-         << "ver.:" << ver
-         << endl;
+    int gState = 0;
+    char eName = 'E';
+    int rows = 10, cols = 10, traps = 10, enemys = 0;
+    while (true)
+    {
+        Dungeon game;
+        // ---------------- Process the menu options
+        // ---------------- Game preconfig on the settings section
+        gState = startMenu(game);
 
-    Dungeon board;
+        // ---------------- The Game
+        if (gState == 1){
+            gameRun(game);
+        } else {
+            cout << "Thank you for playing my game.\n"
+                 << "Have a good life."
+                 << endl;
+            return 0;
+        }
+    }
+}
 
-    //enemy function testing
-    board.initEnemys(5, 'E');
-    board.print();
-    
-    //temporary game loop test
-    while(true){
+int startMenu(Dungeon& game)
+{
+    while (true)
+    {
+        fileRead("Output.txt", "MainMenu", "EndMainMenu");
+
+        int choice = 0;
+        cin >> choice;
+
+        if (cin.fail())
+        {
+            cerr << "This is a terribly invalid input, "
+                 << "please try again."
+                 << endl;
+            cin.clear();
+        } else {
+            switch (choice)
+            {
+            case 1:
+                cout << "The game will begin now.";
+                return 1;
+            break;
+            case 2:
+                fileRead("Output.txt", "Instructions", "EndInstructions");
+            break;
+            case 3:
+            {
+                // ---------------- Settings (too much work for now)
+                configMenu();
+            }
+            break;
+            case 4:
+                return -1;
+            break;
+            default:
+            {
+                cerr << choice
+                     << " is not a valid choice, please try again."
+                     << endl;
+            }
+            break;
+            }
+        }
+        clearOutput();
+    }
+}
+
+int gameRun(Dungeon& game){
+    game.print();
+    while (true)
+    {
         int x = 0, y = 0;
         char direction = ' ';
-        cin >> direction;
 
-        switch (direction){
+        bool safe = false;
+        while(!safe){
+            safe = true;
+
+            cout << "Choose a direction to move: ";
+            cin >> direction;
+            clearOutput();
+
+            switch (direction)
+            {
             case 'd':
                 x = 1;
-                break;
+            break;
             case 'a':
                 x = -1;
-                break;
+            break;
             case 's':
                 y = 1;
-                break;
+            break;
             case 'w':
                 y = -1;
-                break;
+            break;
+            case '0':
+                return 0;
+            default:
+                cerr <<"Not a valid input!\n"
+                        <<"Try harder if you want to break my program buddy.\n"
+                        <<"Something like \'w\' \'a\' \'s\' or \'d\'."
+                        << endl;
+                safe = false;
+            break;
+            }
         }
-        int victory = board.movePlayer(y, x);
-        
-        int lose = board.moveEnemys('E');
-        cout << lose;
 
-        if (victory != 0){
-            switch (victory){
-                case 1:
-                    cout << "You win!";
+        int victory = game.movePlayer(y, x);
+        if (game.moveEnemys('E') != 0)
+        {
+            victory = -1;
+        }
+
+        if (victory != 0)
+        {
+            switch (victory)
+            {
+            case 1:
+                cout << "You win! Congrats.";
                 break;
-                case -1:
-                    cout << "You lose!";
+            case -1:
+                cout << "You lose! Boo! SHAME ON YOU!" << endl;
                 break;
             }
             return 0;
         }
-
-        board.print();
+        else
+        {
+            game.print();
+        }
     }
 }
