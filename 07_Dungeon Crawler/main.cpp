@@ -24,8 +24,6 @@ int main()
     {
         Dungeon game(size, size, traps);
         game.initEnemys(enemys, eName);
-        // ---------------- Process the menu options
-        // ---------------- Game preconfig on the settings section
         int gState = startMenu(game);
 
         switch (gState){
