@@ -1,7 +1,7 @@
 Presentation
 
 Welcome to my take on the Dungeon Crawler game!
-ver.: 1.1
+ver.: 1.11
 EndPresentation
 
 MainMenu
@@ -9,7 +9,7 @@ MainMenu
 Choose one of the following options:
 1 - Start game
 2 - Read Instructions
-3 - Settings menu (Coming Soon, maybe?)
+3 - Settings menu
 4 - quit.
 EndMainMenu
 

@@ -42,3 +42,4 @@ Your program will crash if they move off the top or bottom of the board!
     .1 - Stable fully completed game (Finally).
         Added moving enemys
         Added the ConfigMenu with some options
+    .11 - Corrections on the output text and .doc
