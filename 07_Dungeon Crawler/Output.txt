@@ -1,8 +1,7 @@
 Presentation
 
-Final beta- Preparing the UI.
-ver.: 0.8
 Welcome to my take on the Dungeon Crawler game!
+ver.: 1.01
 EndPresentation
 
 MainMenu

@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <limits>
 
 #include "generic.hpp"
 #include "Dungeon.hpp"

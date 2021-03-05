@@ -35,3 +35,7 @@ Your program will crash if they move off the top or bottom of the board!
 0.8 - Final beta- Preparing the UI
 
 1.0 - Stable full game release.
+    Moving enemys were temporarely removed due to
+    instability while running the game multiple times.
+
+1.01 - Small tweaks on the documentation.
