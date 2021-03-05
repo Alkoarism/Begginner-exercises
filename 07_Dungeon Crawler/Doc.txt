@@ -24,18 +24,21 @@ Your program will crash if they move off the top or bottom of the board!
 
 ***Program Progression throught versions***
 
-0.0 - Print test
-0.1 - Struct to Class conversion
-0.2 - Variable size board code test
-0.3 - Player movement
-0.4 - Adding traps to the game
-0.5 - Making the game playable
-0.6 - Still making the game playable
-0.7 - Now Adding moving enemys!
-0.8 - Final beta- Preparing the UI
+0   .0 - Print test
+    .1 - Struct to Class conversion
+    .2 - Variable size board code test
+    .3 - Player movement
+    .4 - Adding traps to the game
+    .5 - Making the game playable
+    .6 - Still making the game playable
+    .7 - Now Adding moving enemys!
+    .8 - Final beta- Preparing the UI
 
-1.0 - Stable full game release.
-    Moving enemys were temporarely removed due to
-    instability while running the game multiple times.
+1   .0 - Stable full game release.
+        Moving enemys were temporarely removed due to
+        instability while running the game multiple times.
+    .01 - Small tweaks on the documentation.
 
-1.01 - Small tweaks on the documentation.
+    .1 - Stable fully completed game (Finally).
+        Added moving enemys
+        Added the ConfigMenu with some options

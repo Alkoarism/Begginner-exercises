@@ -1,7 +1,7 @@
 Presentation
 
 Welcome to my take on the Dungeon Crawler game!
-ver.: 1.01
+ver.: 1.1
 EndPresentation
 
 MainMenu
@@ -9,24 +9,44 @@ MainMenu
 Choose one of the following options:
 1 - Start game
 2 - Read Instructions
-3 - Settings (Coming Soon, maybe?)
+3 - Settings menu (Coming Soon, maybe?)
 4 - quit.
 EndMainMenu
 
 Instructions
 
-You are in a dungeon and need to get to the treasure marked as "X".
+You are in a dungeon and need to get to the treasure tagged as "X".
 The "." are tiles where you can safely step
-On the map, you are marked as P" and can move vertically or
+On the map, you are tagged as "P" and can move vertically or
 horizontally by using the keys as follows:
 w = up
 s = down
 a = left
 d = right
 Only the first input character will be read.
-Any other entity on the board is considered as an enemy and
-if you move towards one of them, or the opposite, you lose the game.
+
+The other entitys on the game are hostiles,
+so if you move towards them or the opposite, you lose.
+There are static entitys, called traps tagged as "T" 
+and moving ones called enemys, tagged "E" by default.
 
 To stop the game on its current stage input 0
-and you will be redirected to the menu.
+and you will be redirected to the main menu.
 EndInstructions
+
+ConfigTxt
+
+Choose the parameter you want to change:
+1 - To return to main menu
+2 - Number of traps (Minimun of 0)
+3 - Number of enemys (Minimun of 0)
+4 - Board size (Minimun of 5)
+5 - Change Enemy tag
+6 - Reset to default
+EndConfigTxt
+
+ErrorMsg
+
+Not a valid input!
+Try harder if you want to break my program buddy.
+EndErrorMsg
