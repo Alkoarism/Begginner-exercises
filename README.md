@@ -1,6 +1,4 @@
 
-https://user-images.githubusercontent.com/69710741/111059145-e6021880-8471-11eb-8bc0-cd078942528f.mp4
-
 # Begginner-exercises
 Some beginner C++ exercises to help me improve my skills on a entertaining way.
 The original source where they were proposed is a thread on reddit about C++ exercises for complete beginners.
