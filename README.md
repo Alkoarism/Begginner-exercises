@@ -1,3 +1,4 @@
+![Exemplo-de-teste-do-Dungeon-Crawler](https://user-images.githubusercontent.com/69710741/111059231-a851bf80-8472-11eb-953c-947d023bb80b.gif)
 
 # Begginner-exercises
 Some beginner C++ exercises to help me improve my skills on a entertaining way.
