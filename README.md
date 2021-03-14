@@ -8,4 +8,6 @@ The resolution files on this repository where writen using Visual Studio CODE fo
 and Code Blocks for compiling and running all the files properly. This was made with
 the intent of making the coding process easier on early stages and to improve my contact
 with the language as well as with the IDE´s used with it. On a later stage I intend to start 
-using Visual Studio Community.
+using Visual Studio Community
+
+![Exemplo-de-teste-do-Dungeon-Crawler](https://user-images.githubusercontent.com/69710741/111059231-a851bf80-8472-11eb-953c-947d023bb80b.gif)
