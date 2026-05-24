@@ -87,8 +87,8 @@ Last but not least, let's not forget to link everything:
     
 CML files can be written as a single CMakeLists.txt file at the root directory of a project or spread out through the project tree in order to separate concerns to their respective folders. In both cases the code is the same and needs only a few lines to be ported between each style as follows:
 ```cmake
-add_subdirectory(MyProgram) \\Related CML stuff goes here
-add_subdirectory(MyLibrary) \\same for .h file relate CML code
+add_subdirectory(MyProgram) #Related CML stuff goes here
+add_subdirectory(MyLibrary) #same for .h file relate CML code
 ```
 
 ---
