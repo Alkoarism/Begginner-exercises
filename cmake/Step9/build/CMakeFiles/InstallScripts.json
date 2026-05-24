@@ -1,0 +1,16 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/alkoarism/Documentos/cmake_tutorial/Step9/build/cmake_install.cmake",
+		"/home/alkoarism/Documentos/cmake_tutorial/Step9/build/Tutorial/cmake_install.cmake",
+		"/home/alkoarism/Documentos/cmake_tutorial/Step9/build/Tests/cmake_install.cmake",
+		"/home/alkoarism/Documentos/cmake_tutorial/Step9/build/MathFunctions/cmake_install.cmake",
+		"/home/alkoarism/Documentos/cmake_tutorial/Step9/build/MathFunctions/MathLogger/cmake_install.cmake",
+		"/home/alkoarism/Documentos/cmake_tutorial/Step9/build/MathFunctions/MathExtensions/cmake_install.cmake",
+		"/home/alkoarism/Documentos/cmake_tutorial/Step9/build/MathFunctions/MathExtensions/OpAdd/cmake_install.cmake",
+		"/home/alkoarism/Documentos/cmake_tutorial/Step9/build/MathFunctions/MathExtensions/OpMul/cmake_install.cmake",
+		"/home/alkoarism/Documentos/cmake_tutorial/Step9/build/MathFunctions/MathExtensions/OpSub/cmake_install.cmake",
+		"/home/alkoarism/Documentos/cmake_tutorial/Step9/build/MathFunctions/MakeTable/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

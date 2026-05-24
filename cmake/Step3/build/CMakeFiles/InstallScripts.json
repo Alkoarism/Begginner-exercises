@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/alkoarism/Documentos/cmake_tutorial/Step3/build/cmake_install.cmake",
+		"/home/alkoarism/Documentos/cmake_tutorial/Step3/build/Tutorial/cmake_install.cmake",
+		"/home/alkoarism/Documentos/cmake_tutorial/Step3/build/MathFunctions/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

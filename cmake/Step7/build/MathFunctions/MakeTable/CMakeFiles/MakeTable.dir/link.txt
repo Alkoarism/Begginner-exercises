@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -Wl,--dependency-file=CMakeFiles/MakeTable.dir/link.d CMakeFiles/MakeTable.dir/MakeTable.cxx.o -o MakeTable

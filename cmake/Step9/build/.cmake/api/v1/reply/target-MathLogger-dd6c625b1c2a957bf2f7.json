@@ -1,0 +1,53 @@
+{
+	"abstract" : true,
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library"
+		],
+		"files" : 
+		[
+			"MathFunctions/MathLogger/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"fileSets" : 
+	[
+		{
+			"baseDirectories" : 
+			[
+				"MathFunctions/MathLogger"
+			],
+			"name" : "HEADERS",
+			"type" : "HEADERS",
+			"visibility" : "INTERFACE"
+		}
+	],
+	"id" : "MathLogger::@38b82eaa5bcc869c1fc2",
+	"name" : "MathLogger",
+	"paths" : 
+	{
+		"build" : "MathFunctions/MathLogger",
+		"source" : "MathFunctions/MathLogger"
+	},
+	"sources" : [],
+	"type" : "INTERFACE_LIBRARY"
+}

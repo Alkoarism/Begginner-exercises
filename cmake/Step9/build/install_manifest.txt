@@ -1,0 +1,11 @@
+/home/alkoarism/Documentos/cmake_tutorial/Step9/install/bin/Tutorial
+/home/alkoarism/Documentos/cmake_tutorial/Step9/install/lib/libMathFunctions.a
+/home/alkoarism/Documentos/cmake_tutorial/Step9/install/include/MathFunctions.h
+/home/alkoarism/Documentos/cmake_tutorial/Step9/install/include/OpAdd.h
+/home/alkoarism/Documentos/cmake_tutorial/Step9/install/include/OpMul.h
+/home/alkoarism/Documentos/cmake_tutorial/Step9/install/include/OpSub.h
+/home/alkoarism/Documentos/cmake_tutorial/Step9/install/include/SqrtTable.h
+/home/alkoarism/Documentos/cmake_tutorial/Step9/install/lib/cmake/Tutorial/TutorialTargets.cmake
+/home/alkoarism/Documentos/cmake_tutorial/Step9/install/lib/cmake/Tutorial/TutorialTargets-noconfig.cmake
+/home/alkoarism/Documentos/cmake_tutorial/Step9/install/lib/cmake/Tutorial/TutorialConfig.cmake
+/home/alkoarism/Documentos/cmake_tutorial/Step9/install/lib/cmake/Tutorial/TutorialConfigVersion.cmake

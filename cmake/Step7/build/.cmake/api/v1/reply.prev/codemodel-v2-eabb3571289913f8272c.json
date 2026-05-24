@@ -1,0 +1,260 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 3,
+					"id" : "MathLogger::@38b82eaa5bcc869c1fc2",
+					"jsonFile" : "target-MathLogger-Debug-236c7a961c6cd5b0d244.json",
+					"name" : "MathLogger",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-9ad1a58d4644cf6543fa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "Tutorial",
+					"jsonFile" : "directory-Tutorial-Debug-7f27e646ebf37c997b31.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Tutorial",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "MathFunctions",
+					"childIndexes" : 
+					[
+						3,
+						4,
+						8
+					],
+					"jsonFile" : "directory-MathFunctions-Debug-2df2981872cb1dc5fea4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "MathFunctions",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"build" : "MathFunctions/MathLogger",
+					"jsonFile" : "directory-MathFunctions.MathLogger-Debug-f82a68bf73d1d389bb84.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "MathFunctions/MathLogger"
+				},
+				{
+					"build" : "MathFunctions/MathExtensions",
+					"childIndexes" : 
+					[
+						5,
+						6,
+						7
+					],
+					"jsonFile" : "directory-MathFunctions.MathExtensions-Debug-1585c8e740309a57db7f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "MathFunctions/MathExtensions"
+				},
+				{
+					"build" : "MathFunctions/MathExtensions/OpAdd",
+					"jsonFile" : "directory-MathFunctions.MathExtensions.OpAdd-Debug-7eb3afbcacb3e9e28491.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "MathFunctions/MathExtensions/OpAdd",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "MathFunctions/MathExtensions/OpMul",
+					"jsonFile" : "directory-MathFunctions.MathExtensions.OpMul-Debug-55c563d4c6e0054794a6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "MathFunctions/MathExtensions/OpMul",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "MathFunctions/MathExtensions/OpSub",
+					"jsonFile" : "directory-MathFunctions.MathExtensions.OpSub-Debug-a4395542ac6729182efc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "MathFunctions/MathExtensions/OpSub",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "MathFunctions/MakeTable",
+					"jsonFile" : "directory-MathFunctions.MakeTable-Debug-4b805acdfb5efd416085.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "MathFunctions/MakeTable",
+					"targetIndexes" : 
+					[
+						0,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"name" : "Tutorial",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 8,
+					"id" : "MakeTable::@c9b53ddcb0c25e13b19e",
+					"jsonFile" : "target-MakeTable-Debug-af0a63b4095e8492541c.json",
+					"name" : "MakeTable",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "MathFunctions::@742f1924b0b2e2878db6",
+					"jsonFile" : "target-MathFunctions-Debug-339a37cbe5f4e408254c.json",
+					"name" : "MathFunctions",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "OpAdd::@72933554f47c358924ab",
+					"jsonFile" : "target-OpAdd-Debug-c3383cf9a9346ae984c7.json",
+					"name" : "OpAdd",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "OpMul::@a454cefe2547f41f8ee5",
+					"jsonFile" : "target-OpMul-Debug-799f5a0d71a6c3917e5a.json",
+					"name" : "OpMul",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "OpSub::@e764cecd943ee851c122",
+					"jsonFile" : "target-OpSub-Debug-279cc184f0689f501e3e.json",
+					"name" : "OpSub",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "RunMakeTable::@c9b53ddcb0c25e13b19e",
+					"jsonFile" : "target-RunMakeTable-Debug-3dece73f02a149b558d2.json",
+					"name" : "RunMakeTable",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Tutorial::@0f1c7c1e2813c5f8f574",
+					"jsonFile" : "target-Tutorial-Debug-bb35f6f92cc8f9915251.json",
+					"name" : "Tutorial",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/alkoarism/Documentos/cmake_tutorial/Step7/build",
+		"source" : "/home/alkoarism/Documentos/cmake_tutorial/Step7"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	}
+}

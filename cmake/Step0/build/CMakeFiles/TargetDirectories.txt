@@ -1,0 +1,3 @@
+/home/alkoarism/Documentos/cmake_tutorial/Step0/build/CMakeFiles/hello.dir
+/home/alkoarism/Documentos/cmake_tutorial/Step0/build/CMakeFiles/edit_cache.dir
+/home/alkoarism/Documentos/cmake_tutorial/Step0/build/CMakeFiles/rebuild_cache.dir

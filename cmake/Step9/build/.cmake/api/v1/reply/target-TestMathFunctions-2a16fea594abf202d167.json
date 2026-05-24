@@ -1,0 +1,179 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Tests/TestMathFunctions"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"add_dependencies",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"Tests/CMakeLists.txt",
+			"MathFunctions/MakeTable/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 28,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"compileDependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "MathFunctions::@742f1924b0b2e2878db6"
+		}
+	],
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-flto=auto -fno-fat-lto-objects"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/home/alkoarism/Documentos/cmake_tutorial/Step9/MathFunctions"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/alkoarism/Documentos/cmake_tutorial/Step9/MathFunctions/MathExtensions/OpAdd"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/alkoarism/Documentos/cmake_tutorial/Step9/MathFunctions/MathExtensions/OpMul"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/alkoarism/Documentos/cmake_tutorial/Step9/MathFunctions/MathExtensions/OpSub"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "MathFunctions::@742f1924b0b2e2878db6"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "OpAdd::@72933554f47c358924ab"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "OpMul::@a454cefe2547f41f8ee5"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "OpSub::@e764cecd943ee851c122"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "RunMakeTable::@c9b53ddcb0c25e13b19e"
+		}
+	],
+	"id" : "TestMathFunctions::@3e3005ae7443f751ac85",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-flto=auto -fno-fat-lto-objects",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../MathFunctions/libMathFunctions.a",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX",
+		"lto" : true
+	},
+	"linkLibraries" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "MathFunctions::@742f1924b0b2e2878db6"
+		}
+	],
+	"name" : "TestMathFunctions",
+	"nameOnDisk" : "TestMathFunctions",
+	"paths" : 
+	{
+		"build" : "Tests",
+		"source" : "Tests"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "Tests/TestMathFunctions.cxx",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

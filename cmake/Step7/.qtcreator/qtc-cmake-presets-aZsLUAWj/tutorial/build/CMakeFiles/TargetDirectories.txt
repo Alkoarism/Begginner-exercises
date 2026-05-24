@@ -1,0 +1,2 @@
+/home/alkoarism/Documentos/cmake_tutorial/Step7/.qtcreator/qtc-cmake-presets-aZsLUAWj/tutorial/build/CMakeFiles/edit_cache.dir
+/home/alkoarism/Documentos/cmake_tutorial/Step7/.qtcreator/qtc-cmake-presets-aZsLUAWj/tutorial/build/CMakeFiles/rebuild_cache.dir
