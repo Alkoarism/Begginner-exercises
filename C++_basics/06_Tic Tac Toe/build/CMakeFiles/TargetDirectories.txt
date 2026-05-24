@@ -1,0 +1,3 @@
+/home/alkoarism/Documentos/Begginner-exercises/06_Tic Tac Toe/build/CMakeFiles/TIC_TAC_TOE.dir
+/home/alkoarism/Documentos/Begginner-exercises/06_Tic Tac Toe/build/CMakeFiles/edit_cache.dir
+/home/alkoarism/Documentos/Begginner-exercises/06_Tic Tac Toe/build/CMakeFiles/rebuild_cache.dir

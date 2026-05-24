@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/TIC_TAC_TOE.dir/link.d CMakeFiles/TIC_TAC_TOE.dir/generic.cpp.o CMakeFiles/TIC_TAC_TOE.dir/IA_TTT.cpp.o "CMakeFiles/TIC_TAC_TOE.dir/main2-0.cpp.o" CMakeFiles/TIC_TAC_TOE.dir/Tic_Tac_Toe.cpp.o -o TIC_TAC_TOE

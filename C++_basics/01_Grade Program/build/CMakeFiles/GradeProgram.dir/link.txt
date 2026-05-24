@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/GradeProgram.dir/link.d CMakeFiles/GradeProgram.dir/main.cpp.o CMakeFiles/GradeProgram.dir/UX.cpp.o -o GradeProgram

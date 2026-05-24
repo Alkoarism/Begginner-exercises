@@ -1,0 +1,3 @@
+/home/alkoarism/Documentos/Begginner-exercises/01_Grade Program/build/CMakeFiles/GradeProgram.dir
+/home/alkoarism/Documentos/Begginner-exercises/01_Grade Program/build/CMakeFiles/edit_cache.dir
+/home/alkoarism/Documentos/Begginner-exercises/01_Grade Program/build/CMakeFiles/rebuild_cache.dir
