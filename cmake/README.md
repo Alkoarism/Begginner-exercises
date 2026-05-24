@@ -1,3 +1,8 @@
+This directory contains source code examples for the CMake Tutorial.
+Each step has its own subdirectory containing code that may be used as a
+starting point. The tutorial examples are progressive so that each step
+provides the complete solution for the previous step.
+
 >You'll surely forget how to use this tool. Knowing that, here is a small step-by-step guide on how to set it up for a project:
 ->OBS: All info here was taken from https://cmake.org/
 
